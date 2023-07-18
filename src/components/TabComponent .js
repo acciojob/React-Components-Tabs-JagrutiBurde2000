@@ -1,22 +1,19 @@
-import React , {useState} from 'react';
+
+
+
+import React from 'react';
 
 
 const TabComponent = () => {
-  const [activeTab, setActiveTab] = useState('Home');
-
-  const handleTabClick = (tabName) => {
-    setActiveTab(tabName);
-  };
-
   return (
     <div className="tabs">
-      <div className="tab" id="Home-Tab" onClick={() => handleTabClick('Home')}>
+      <div className="tab" id="Home-Tab">
         Home
       </div>
-      <div className="tab" id="About-Tab" onClick={() => handleTabClick('About')}>
+      <div className="tab" id="About-Tab">
         About
       </div>
-      <div className="tab" id="Features-Tab" onClick={() => handleTabClick('Features')}>
+      <div className="tab" id="Features-Tab">
         Features
       </div>
       <div className="viewport">
@@ -25,5 +22,7 @@ const TabComponent = () => {
     </div>
   );
 };
+
+
 
 export default TabComponent;
